@@ -27,3 +27,6 @@ Creating Shaders (via code and Shader Graph) in Unity 2019
 
 ### 09_ShaderGraph_RimEffect
 ![09_ShaderGraph_RimEffect](https://user-images.githubusercontent.com/263776/57664354-91fc2380-75bd-11e9-9d4c-fb3c7f4385da.gif)
+
+### 0A_Postprocessing
+![0A_PostProcessing](https://user-images.githubusercontent.com/263776/57720893-6ffbb300-7648-11e9-81a2-1b3dd9cf0bec.gif)
