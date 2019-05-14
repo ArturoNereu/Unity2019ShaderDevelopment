@@ -105,7 +105,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_AAE1303C: {r: 1.8494226, g: 1.9056604, b: 0.49439308, a: 1}
+    - Color_AAE1303C: {r: 2.2322493, g: 0.42003402, b: 2.5442064, a: 1}
     - Color_E178555C: {r: 0.4871467, g: 0.9811321, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
