@@ -1,13 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
-public class DioaramaPostProcessing : MonoBehaviour
+[Serializable]
+[PostProcess(typeof(DioramaPostProcessingRenderer), PostProcessEvent.AfterStack, "Custom/PostProcessingBlur")]
+public sealed class DioramaPostProcessing : PostProcessEffectSettings
 {
-    public Material postProcessingMaterial;
+    [Range(0f, .1f), Tooltip("Grayscale effect intensity.")]
+    public FloatParameter blurSize = new FloatParameter { value = 0.05f };
+}
 
-    void OnRenderImage(RenderTexture source, RenderTexture destination)
+public sealed class DioramaPostProcessingRenderer : PostProcessEffectRenderer<DioramaPostProcessing>
+{
+    public override void Render(PostProcessRenderContext context)
     {
-        Graphics.Blit(source, destination, postProcessingMaterial);
+        var sheet = context.propertySheets.Get(Shader.Find("Custom/PostProcessingBlur"));
+        sheet.properties.SetFloat("_blurSize", settings.blurSize);
+        context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 0);
     }
 }
