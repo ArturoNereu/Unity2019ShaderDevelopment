@@ -6,6 +6,8 @@
 	TEXTURE2D_SAMPLER2D(_MainTex, sampler_MainTex);
 	float _blurSize;
 
+
+	// Blur algorithm from Ronja https://www.ronja-tutorials.com/2018/08/27/postprocessing-blur.html 
 	float4 Frag(VaryingsDefault i) : SV_Target
 	{
 		float4 color = 0;

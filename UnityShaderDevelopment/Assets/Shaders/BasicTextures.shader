@@ -1,4 +1,4 @@
-﻿Shader "Custom/BasicTextures"
+﻿Shader "ShaderDemo/BasicTextures"
 {
 	Properties
 	{
@@ -39,7 +39,6 @@
 			{
 				return _Color * tex2D(_Albedo, i.uv);
 			}
-
 			ENDCG
 		}
     }

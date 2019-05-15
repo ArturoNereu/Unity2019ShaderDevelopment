@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/BasicVertexAnimation"
+﻿Shader "ShaderDemo/BasicVertexAnimation"
 {
 	Properties
 	{
@@ -17,7 +15,6 @@ Shader "Custom/BasicVertexAnimation"
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
-
 			#include "UnityCG.cginc"
 
 			sampler2D _Albedo;
