@@ -1,4 +1,4 @@
-﻿Shader "Custom/BasicColor"
+﻿Shader "ShaderDemo/BasicColor"
 {
 	Properties
 	{

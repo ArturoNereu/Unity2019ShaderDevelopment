@@ -6,7 +6,7 @@ using UnityEngine.Rendering.PostProcessing;
 [PostProcess(typeof(DioramaPostProcessingRenderer), PostProcessEvent.AfterStack, "Custom/PostProcessingBlur")]
 public sealed class DioramaPostProcessing : PostProcessEffectSettings
 {
-    [Range(0f, .1f), Tooltip("Grayscale effect intensity.")]
+    [Range(0f, .1f), Tooltip("Blur effect intensity.")]
     public FloatParameter blurSize = new FloatParameter { value = 0.05f };
 }
 

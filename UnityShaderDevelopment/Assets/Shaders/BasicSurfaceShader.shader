@@ -35,7 +35,6 @@
         struct Input
         {
             float2 uv_MainTex;
-			float2 uv_MaskTex;
 			float2 uv_BumpMap;
         };
 

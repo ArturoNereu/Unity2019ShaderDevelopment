@@ -1,4 +1,4 @@
-﻿Shader "ShaderDemo/SurfaceDisappear"
+﻿Shader "ShaderDemo/SurfaceMask"
 {
     Properties
 	{
@@ -12,7 +12,6 @@
     SubShader
     {
         Tags { "RenderType"="Opaque" }
-        LOD 200
 
         CGPROGRAM
         #pragma surface surf Standard fullforwardshadows
@@ -38,7 +37,7 @@
         {
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
 
-			float isMask = tex2D(_Mask, IN.uv_MainTex).xyz == fixed3(1,1,1) && _MagicMask.r == 1;
+			float isMask = tex2D(_Mask, IN.uv_MainTex).xyz == fixed3(1,1,1) && _MagicMask == 1;
 
 			o.Albedo = ((1 - isMask) * c.rgb) + (isMask * _MagicColor);
 
