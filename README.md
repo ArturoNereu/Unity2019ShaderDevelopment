@@ -1,7 +1,7 @@
 # Unity 2019 Shader Development
 Creating Shaders (via code and Shader Graph) in Unity 2019
 
-[Power Point Presentation](https://drive.google.com/file/d/1S7gUOIVTS76gHHTES32opiUEha6kVOa6/view?usp=sharing)
+[Power Point Presentation](https://drive.google.com/file/d/1S7gUOIVTS76gHHTES32opiUEha6kVOa6/view?usp=sharing) (download it, as the Google Doc viewer won't work)
 
 ### 01_Shader_BasicColor
 ![01_BasicColorShader](https://user-images.githubusercontent.com/263776/57661438-70486f80-75b0-11e9-92fd-d3f5b5ab3f69.gif)
