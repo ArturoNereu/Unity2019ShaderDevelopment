@@ -1,7 +1,13 @@
 # Unity 2019 Shader Development
 Creating Shaders (via code and Shader Graph) in Unity 2019
 
-[Power Point Presentation](https://drive.google.com/file/d/1S7gUOIVTS76gHHTES32opiUEha6kVOa6/view?usp=sharing) (download it, as the Google Doc viewer won't work)
+This repository and presentation guides you through the very basics of shader development in Unity 2019. We cover Vertex Shaders, Fragment Shaders, Surface Shaders, Shader Graphs and Post Processing Effects.
+
+If you have any question, please send me a message on twitter: [@ArturoNereu](https://twitter.com/arturonereu)
+
+[Power Point Presentation](https://drive.google.com/file/d/1S7gUOIVTS76gHHTES32opiUEha6kVOa6/view?usp=sharing) (download it, as the Google Doc viewer won't work).
+
+So, a Shader is a specialized program that (usually) runs on the GPU and whose main purpose is to transform vertices and fragments in a 3D (or 2D) program. 
 
 ### 01_Shader_BasicColor
 ![01_BasicColorShader](https://user-images.githubusercontent.com/263776/57661438-70486f80-75b0-11e9-92fd-d3f5b5ab3f69.gif)
