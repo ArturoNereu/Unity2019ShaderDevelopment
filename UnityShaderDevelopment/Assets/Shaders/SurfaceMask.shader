@@ -15,7 +15,6 @@
 
         CGPROGRAM
         #pragma surface surf Standard fullforwardshadows
-        #pragma target 3.0
 
 		fixed4 _MagicColor;
 

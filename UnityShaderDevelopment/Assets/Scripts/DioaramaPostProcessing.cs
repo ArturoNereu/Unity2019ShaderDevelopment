@@ -16,6 +16,7 @@ public sealed class DioramaPostProcessingRenderer : PostProcessEffectRenderer<Di
     {
         var sheet = context.propertySheets.Get(Shader.Find("Custom/PostProcessingBlur"));
         sheet.properties.SetFloat("_blurSize", settings.blurSize);
+
         context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 0);
     }
 }

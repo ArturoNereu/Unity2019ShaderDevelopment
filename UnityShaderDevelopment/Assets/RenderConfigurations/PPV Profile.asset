@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8889321675059890826
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DioramaPostProcessing
+  m_EditorClassIdentifier: Assembly-CSharp::DioramaPostProcessing
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  blurSize:
+    overrideState: 1
+    value: 0.0034
 --- !u!114 &-4460866624381789000
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,7 +51,26 @@ MonoBehaviour:
   m_Name: PPV Profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: -4460866624381789000}
+  - {fileID: 5594173751171498582}
+--- !u!114 &5594173751171498582
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DioramaPostProcessing
+  m_EditorClassIdentifier: Assembly-CSharp::DioramaPostProcessing
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  blurSize:
+    overrideState: 1
+    value: 0.0143
 --- !u!114 &5597611706068351448
 MonoBehaviour:
   m_ObjectHideFlags: 3
